@@ -1,11 +1,19 @@
 friends = ["Rolf", "Ebert", "Jose"]
+# check if element is in a list
+'Ebert' in friends # True
 friends.append("Lais")
 del friends[0]
 last = friends.pop() # removes the last item: Lais
 second = friends.pop(1) # removes the second item: Ebert
 print(friends) # ['Ebert', 'Jose']
 print(len(friends))
+friends.insert(0, 'Somebody')
+friends_sorted = sorted(friends) # sort a list without changing the original
+friends.sort() # permanently sort a list
+friends.sort(reverse=True) # permanently sort a list
+friends.reverse() # permanently reverse a list
 friends.clear() # clear everything
+len(friends) # lenght of a list
 
 friends = [
     ["Rolf", 24],
@@ -28,3 +36,24 @@ print(new_list) # [1, 2, 3, 4, 5, 6, 7, 8]
 l_1.extend(l_2)
 
 print(l_1)  # [1, 2, 3, 4, 5, 6, 7, 8]
+
+# remove all entries that match in a list
+pets = ['cat', 'dog', 'bird', 'turtle', 'cat']
+while 'cat' in pets:
+    pets.remove('cat')
+
+my_number_list = list(range(1,1001))
+
+# list comprehensions
+squares = [value**2 for value in range(1,11)] # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# slicing
+squares[0:3]  # [1, 4, 9]
+squares[:3]   # [1, 4, 9]
+squares[1:4]  # [4, 9, 16]
+squares[4:]   # [25, 36, 49, 64, 81, 100]
+squares[-3:]  # [64, 81, 100]
+squares[:-3]  # [1, 4, 9, 16, 25, 36, 49]
+
+# copy a list
+new_list = squares[:]
