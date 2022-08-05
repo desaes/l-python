@@ -1,3 +1,6 @@
+from calendar import firstweekday
+
+
 enemy = {
     'type': 'wolf', 
     'int': 5, 
@@ -44,4 +47,8 @@ for v in enemy.values():
 
 # unique values
 for v in set(enemy.values()):
-    print(f"value -> {v}")         
+    print(f"value -> {v}")
+
+friends = [("Rolf", 24), ("Adam", 30), ("Anne",27)]
+friend_ages = dict(friends)
+print(friend_ages) # {'Rolf': 24, 'Adam': 30, 'Anne': 27}

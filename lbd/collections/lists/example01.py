@@ -57,3 +57,12 @@ squares[:-3]  # [1, 4, 9, 16, 25, 36, 49]
 
 # copy a list
 new_list = squares[:]
+
+# average of a list
+grades = [80, 75, 90, 100]
+print(sum(grades)/len(grades))
+
+# join
+friends = ["Rolf", "Anne", "Charlie"]
+comma_separated = ", ".join(friends)
+print(f"My friends are {comma_separated}")
