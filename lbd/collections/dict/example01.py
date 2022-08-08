@@ -32,6 +32,10 @@ print(speed)
 for k, v in enemy.items():
     print(f"key -> {k}, value -> {v}")
 
+friends = {"Rolf": 24, "Adam": 30, "Anne": 27}
+for name, age in friends.items():
+    print(name, age)    
+
 # keys
 # for k in enemy: # same thing of next line.
 for k in enemy.keys():
@@ -52,3 +56,5 @@ for v in set(enemy.values()):
 friends = [("Rolf", 24), ("Adam", 30), ("Anne",27)]
 friend_ages = dict(friends)
 print(friend_ages) # {'Rolf': 24, 'Adam': 30, 'Anne': 27}
+
+
