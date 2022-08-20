@@ -1,0 +1,19 @@
+Common errors:
+IndexError: triggered when trying to access a index that is not available in a list
+KeyError: triggered when key does not exist in a dict
+NameError: happens when variable does not exist
+AttributeError: when you try to use/access an attribute that does not exist in one object
+NotImplementedError: this error can be used to raise one exception telling that a method was not implemented yet
+-> raise NotImplementedError('This feature has not been implemented yet')
+RuntimeError: generic error when you are running your code
+SyntaxError: triggered by typing error as a missing colon (:) at the end of for instruction
+IndentationError: no explanation needed :)
+TabError: usually happens when you switch from editors
+TypeError: usually happen when you try to mix numeric type with a string
+ValueError: usually occur when you are trying to convert values that are unsupported by a function
+-> int('10.5')
+ImportError: happens when circular imports take place... one module tries to import another module, but the imported module tries to import the caller
+DeprecationWarning: using to rise an error to tell the user that are better/alternative ways to do that thing
+-> raise DeprecationWarning('this function still works but is deprecated.')
+
+https://docs.python.org/3/library/exceptions.html
