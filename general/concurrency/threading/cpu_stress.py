@@ -44,5 +44,5 @@ if __name__ == '__main__':
 	main()
 
 """
-Terminou em 15.03 segundos.
+Terminou em 16.46 segundos.
 """

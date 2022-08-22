@@ -23,5 +23,5 @@ if __name__ == '__main__':
 	main()
 
 """
-Terminou em 9.03 segundos.
+Terminou em 7.90 segundos.
 """

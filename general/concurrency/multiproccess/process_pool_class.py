@@ -1,7 +1,14 @@
 import multiprocessing
 import timeit
+import time
 
 PROCS_BY_CORE = 1
+
+class Calc:
+    def __init__(self, data):
+        self.data = data
+        calc(self.data)
+        time.sleep(0.5)
 
 def calc(data):
     return data ** 2
@@ -13,8 +20,9 @@ def main():
 
     pool = multiprocessing.Pool(processes=pool_size)
 
-    inputs = list(range(100_000_000))
-    outputs = pool.map(calc, inputs)
+    #inputs = list(range(100_000_000))
+    inputs = list(range(100))
+    outputs = pool.map(Calc, inputs)
 
     print(f'Outputs: {len(outputs)}')
 
