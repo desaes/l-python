@@ -8,9 +8,11 @@ def fibo() -> Generator[int, None, None]:
         value, next = next, value + next
         yield value
 
-for n in fibo():
-    print(n, end=', ')
-    if n > 1000:
-        break
+if __name__ == "__main__":
 
-print('\nDone')
+    for n in fibo():
+        print(n, end=', ')
+        if n > 1000:
+            break
+
+    print('\nDone')
