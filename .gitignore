@@ -2,3 +2,6 @@
 **/venv
 **/nogit
 **/__pycache__
+**/*.so
+**/*.o
+**/build

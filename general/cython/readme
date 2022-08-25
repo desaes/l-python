@@ -1,0 +1,10 @@
+Install cython
+
+> pip install cython
+
+Write a module
+Rename the module to pyx
+Write the setup file
+Compile module
+
+> python setup.py build_ext --inplace
