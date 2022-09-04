@@ -16,3 +16,6 @@ def header(text, align=True):
 
 print(header('header example 01'))
 print(header('header example 02', align=False))
+
+# reverse the string
+print(str[::-1])
