@@ -19,3 +19,6 @@ print(header('header example 02', align=False))
 
 # reverse the string
 print(str[::-1])
+
+# string to list
+x = list('my string')
