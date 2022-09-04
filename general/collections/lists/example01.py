@@ -3,7 +3,7 @@ friends = ["Rolf", "Ebert", "Jose"]
 'Ebert' in friends # True
 friends.append("Lais")
 del friends[0]
-last = friends.pop() # removes the last item: Lais
+last_item = friends.pop() # removes the last item: Lais
 second = friends.pop(1) # removes the second item: Ebert
 print(friends) # ['Ebert', 'Jose']
 print(len(friends))
@@ -12,7 +12,14 @@ friends_sorted = sorted(friends) # sort a list without changing the original
 friends.sort() # permanently sort a list
 friends.sort(reverse=True) # permanently sort a list
 friends.reverse() # permanently reverse a list
+friends[::-1] # also reverse a list
+lcopy = friends.copy() # copy a list
+lcopy = friends[::] # copy a list
 friends.clear() # clear everything
+
+l = [1, 2, 2, 3, 3, 4, 4, 4, 5]
+l.count(2) # count the number of items in the list that matches with the given parameter 
+
 len(friends) # lenght of a list
 
 friends = [
@@ -33,7 +40,11 @@ l_2 = [5,6,7,8]
 new_list = l_1 + l_2
 print(new_list) # [1, 2, 3, 4, 5, 6, 7, 8]
 
+# extend only accepts iterable as parameter. same of l_1 + l_2
 l_1.extend(l_2)
+
+# insert a new value in the list at given position
+l_1.insert(2, 'new value')
 
 print(l_1)  # [1, 2, 3, 4, 5, 6, 7, 8]
 
