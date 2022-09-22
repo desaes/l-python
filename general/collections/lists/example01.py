@@ -80,3 +80,24 @@ print(f"My friends are {comma_separated}")
 
 # string to list
 x = list('my string')
+
+
+pets = ['cat', 'dog', 'bird', 'turtle', 'cat']
+
+# convert a list in a string
+','.join(pets)
+# 'cat,dog,bird,turtle,cat'
+
+# return the index for the first element found
+print(pets.index('dog'))
+
+# return the index for the first element found after given index
+print(pets.index('dog', 4))
+
+# return the index for the first element found between indexes
+print(pets.index('dog', 4, 17))
+
+print(sum(lista)) # sum
+print(max(lista)) # maximum value
+print(min(lista)) # minimum value
+print(len(lista)) # number of elements
