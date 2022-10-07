@@ -1,5 +1,6 @@
 from calendar import firstweekday
 
+enemy_less_common = dict(type='spider', int=2, speed=10, str=4)
 
 enemy = {
     'type': 'wolf', 
