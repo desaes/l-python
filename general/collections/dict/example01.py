@@ -21,6 +21,14 @@ enemy.pop('color')
 del enemy['color']
 print(enemy)
 
+# clear the dict
+enemy.clear()
+
+# copy a dict, deep copy
+new = enemy.copy()
+
+
+
 # using keys in square brackets can cause error if the key does not exist
 # use get to avoid the error
 
