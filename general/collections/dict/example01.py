@@ -17,6 +17,7 @@ enemy['color'] = 'grey'
 print(enemy)
 
 # removing key/values
+enemy.pop('color')
 del enemy['color']
 print(enemy)
 
