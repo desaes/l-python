@@ -8,6 +8,7 @@ science_friends = {"Jen", "Charlie"}
 art_friends.add("Jen")
 art_friends.remove("Jen") # returns a error if the item does not exist
 art_friends.discard("Jen") # don't return a error if the item does not exist
+new_set = art_friends.copy() # deep copy 
 
 vegetables = {"carrot", "lettuce", "broccoli", "onion"}
 vegetables.update(["potato", "pumpkin"])
