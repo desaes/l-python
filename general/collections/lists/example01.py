@@ -59,12 +59,33 @@ my_number_list = list(range(1,1001))
 squares = [value**2 for value in range(1,11)] # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 # slicing
-squares[0:3]  # [1, 4, 9]
-squares[:3]   # [1, 4, 9]
-squares[1:4]  # [4, 9, 16]
-squares[4:]   # [25, 36, 49, 64, 81, 100]
-squares[-3:]  # [64, 81, 100]
-squares[:-3]  # [1, 4, 9, 16, 25, 36, 49]
+squares[0:3]   # [1, 4, 9]
+squares[:3]    # [1, 4, 9]
+squares[1:4]   # [4, 9, 16]
+squares[4:]    # [25, 36, 49, 64, 81, 100]
+squares[-3:]   # [64, 81, 100]
+squares[:-3]   # [1, 4, 9, 16, 25, 36, 49]
+squares[-3:-1] # [64, 81]
+
+numbers = [1, 3, 3]
+numbers[1:2] = [2]     # [1, 2, 3]
+
+numbers = [1, 3, 5]
+numbers[1:3] = [2, 3]  # [1, 2, 3]
+
+numbers = [1, 3, 5]
+numbers[1:3] = [2, 3, 4, 5]  # [1, 2, 3, 4, 5]
+
+numbers = [1, 5]
+numbers[1:1] = [2, 3, 4]  # [1, 2, 3, 4, 5]
+
+# will remove elements at that index
+numbers[1:3] = []
+
+numbers = [1, 3, 3, 5, 5]
+numbers[1:4:2] = [2, 4]  # [1, 2, 3, 4, 5]
+
+
 
 # copy a list
 new_list = squares[:]
