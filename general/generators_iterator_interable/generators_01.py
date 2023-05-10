@@ -1,5 +1,5 @@
 """
-tuple comprehensions are called generator expression
+Generator expressions are similar to list comprehensions, but with parentheses instead of square brackets
 """
 
 # Using list comprehentions - any receives a list as parameter
@@ -41,3 +41,9 @@ print(getsizeof(9)) # 28
 print(getsizeof(20)) # 28
 print(getsizeof(23452345345)) # 32
 print(getsizeof(True)) # 28
+
+g = (x for x in range(0,10))
+# next can be used to get a value from the generator
+next(g) # 0
+next(g) # 1
+# when next tries to get a value beyond the end an exception StopIteration is triggered

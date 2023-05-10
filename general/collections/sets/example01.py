@@ -37,3 +37,12 @@ art_and_science = art_friends.intersection(science_friends)
 print(art_and_science) # {'Jen'}
 all_friends = art_friends.union(science_friends)
 print(all_friends) # {'Anne', 'Jen', 'Rolf', 'Charlie'}
+
+set(art_friends) - set(science_friends) # {'Anne', 'Rolf'}
+
+def has_duplicates(t):
+    return len(set(t)) < len(t)
+
+# True if art_friends is a subset of science_friends, 
+# including the possibility that they are equal
+set(art_friends) <= set(science_friends) # False
